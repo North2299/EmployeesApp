@@ -1,0 +1,14 @@
+version: '3'
+services:
+  backend:
+    build: ./EmployeesBackend/
+    ports: 
+      - "8080:8080"
+  frontend:
+    build: ./EmployeesFrontend/
+    ports: 
+      - "80:80"
+    links:
+      - "backend"
+    depends_on: 
+      - "backend"
