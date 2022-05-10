@@ -1,9 +1,18 @@
 version: '3'
 services:
+  db:
+    image: mysql:9.4.5
+    environment:
+      - MYSQL_ROOT_PASSWORD=123.456Mm
+      - MYSQL_DATABASE=employeemanager
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=123.456Mm
   backend:
     build: ./EmployeesBackend/
     ports: 
       - "8080:8080"
+    depends_on:
+      - db
   frontend:
     build: ./EmployeesFrontend/
     ports: 
