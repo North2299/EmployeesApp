@@ -30,6 +30,21 @@ spec:
     requests:
       storage: 1Gi    #This will tell kubernetes about the amount of space we are trying to claim.
 ---
+# Define a 'Persistent Voulume'(PV)
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: task-pv-volume
+  labels:
+    type: local
+spec:
+  capacity:
+    storage: 1Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: "/mnt/data"
+---
 # Configure 'Deployment' of mysql server
 apiVersion: apps/v1
 kind: Deployment
