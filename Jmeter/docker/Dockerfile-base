@@ -29,11 +29,6 @@ RUN wget https://archive.apache.org/dist/jmeter/binaries/apache-jmeter-$JMETER_V
     && wget https://jmeter-plugins.org/downloads/file/JMeterPlugins-ExtrasLibs-1.4.0.zip \
     && unzip -o JMeterPlugins-ExtrasLibs-1.4.0.zip -d /jmeter/apache-jmeter-$JMETER_VERSION
 
-
-RUN cd /jmeter/apache-jmeter-$JMETER_VERSION/ \
-    && wget -q -O /tmp/JMeterPlugins-Standard-1.4.0.zip https://jmeter-plugins.org/downloads/file/JMeterPlugins-Standard-1.4.0.zip \
-    && unzip -n /tmp/JMeterPlugins-Standard-1.4.0.zip \
-    && rm /tmp/JMeterPlugins-Standard-1.4.0.zip
 WORKDIR $JMETER_HOME 
     
 COPY install_plugin-manager.sh .
