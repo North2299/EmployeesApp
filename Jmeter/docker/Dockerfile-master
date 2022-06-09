@@ -1,0 +1,4 @@
+FROM mariemzouari/jmeter-base:latest
+
+MAINTAINER mariem.zouari@enis.tn		
+EXPOSE 60000
