@@ -1,0 +1,24 @@
+version: '3'
+
+services:
+  master:
+    image: mariemzouari/jmeter-master:latest
+    tty: true
+    ports:
+      - "60000"
+    volumes:
+      - "/home/userpfe/test/:/jmeter/sample/"
+    networks:
+      - jmeter-network
+  slave:
+    image: mariemzouari/jmeter-slave:latest 
+    tty: true
+    ports:
+      - "50000"
+      - "1099"
+    networks:
+      - jmeter-network
+    depends_on:
+      - master
+networks:
+  jmeter-network:
