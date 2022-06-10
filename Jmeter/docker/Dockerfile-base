@@ -30,7 +30,8 @@ RUN wget https://archive.apache.org/dist/jmeter/binaries/apache-jmeter-$JMETER_V
     && unzip -o JMeterPlugins-ExtrasLibs-1.4.0.zip -d /jmeter/apache-jmeter-$JMETER_VERSION
 
 WORKDIR $JMETER_HOME 
-    
+
+COPY config/user.properties bin/user.properties    
 COPY install_plugin-manager.sh .
 
 RUN chmod +x install_plugin-manager.sh 
