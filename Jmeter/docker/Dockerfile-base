@@ -31,7 +31,7 @@ RUN wget https://archive.apache.org/dist/jmeter/binaries/apache-jmeter-$JMETER_V
 
 WORKDIR $JMETER_HOME 
 
-COPY config/user.properties bin/user.properties    
+COPY ../config/user.properties bin/user.properties    
 COPY install_plugin-manager.sh .
 
 RUN chmod +x install_plugin-manager.sh 
