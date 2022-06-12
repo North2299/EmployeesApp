@@ -20,14 +20,14 @@ echo
 
 echo
 
-kubectl create -n jmeter -f jmeter_slave_deployment.yml
+kubectl create -n jmeter -f jmeter-slave-deployment.yml
 
 
 echo "Creating Jmeter Master"
 
-kubectl create -n jmeter -f jmeter_master_configmap.yml
+kubectl create -n jmeter -f jmeter-master-configmap.yml
 
-kubectl create -n jmeter -f jmeter_master_deployment.yml
+kubectl create -n jmeter -f jmeter-master-deployment.yml
 echo "Printout Of the $tenant Objects"
 
 echo
