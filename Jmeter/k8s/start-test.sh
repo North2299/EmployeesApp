@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 test_file_path = "/home/userpfe/test/sample_test.jmx"
 test_name="$(basename "$test_file_path")"
 
