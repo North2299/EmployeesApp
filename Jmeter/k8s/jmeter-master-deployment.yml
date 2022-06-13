@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: jmeter-master
-        image: mariemzouari/jmeter-master
+        image: mariemzouari/jmeter-master:latest
         imagePullPolicy: Always
         command: [ "/bin/bash", "-c", "--" ]
         args: [ "while true; do sleep 30; done;" ]

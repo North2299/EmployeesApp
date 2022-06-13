@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: jmslave
-        image: mariemzouari/jmeter-slave
+        image: mariemzouari/jmeter-slave:latest
         imagePullPolicy: Always
         ports:
         - containerPort: 1099
