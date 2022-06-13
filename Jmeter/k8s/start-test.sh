@@ -5,9 +5,10 @@ test_name="$(basename "$test_file_path")"
 #Get Master pod details
 
 master_pod=`kubectl get pod -n jmeter | grep jmeter-master | awk '{print $1}'`
+echo $master_pod
 
-kubectl cp "$test_file_path" -n jmeter "$master_pod:/$test_name"
+kubectl cp $test_file_path jmeter/$master_pod:/$test_name
 
-## Echo Starting Jmeter load test
+Echo Starting Jmeter load test
 
 kubectl exec -ti -n jmeter $master_pod -- /bin/bash /load_test "$test_name"
