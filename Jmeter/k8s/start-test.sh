@@ -7,7 +7,7 @@ test_name="$(basename "$test_file_path")"
 master_pod=`kubectl get pod -n jmeter | grep jmeter-master | awk '{print $1}'`
 echo $master_pod
 
-kubectl cp $test_file_path jmeter/$master_pod:/jmeter/samples/$test_name
+kubectl cp $test_file_path jmeter/$master_pod:/jmeter/apache-jmeter-5.4.3/$test_name
 
 #echo Starting Jmeter load test
 
