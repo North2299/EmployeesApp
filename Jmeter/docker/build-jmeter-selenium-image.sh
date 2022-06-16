@@ -1,6 +1,6 @@
 #!/bin/bash
 
-docker build -t mariemzouari/chromejmeter -f Dockerfile-Selenium
+docker build --tag="mariemzouari/chromejmeter" -f Dockerfile-Selenium
 #give the path to the folder  where you have your jmx file
 export volume_path="../senario/testplan2.jmx"
 #give the path within your container
