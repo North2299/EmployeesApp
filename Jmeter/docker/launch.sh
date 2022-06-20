@@ -10,4 +10,3 @@ export JVM_ARGS="-Xmn${n}m -Xms${s}m -Xmx${x}m"
 echo "JVM_ARGS=${JVM_ARGS}"
 echo "jmeter args=$@"
 
-jmeter $@
