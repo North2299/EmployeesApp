@@ -62,6 +62,6 @@ RUN curl --location --silent --show-error --output ${JMETER_HOME}/lib/ext/jmeter
 
 RUN curl --location --silent --show-error --output  ${JMETER_HOME}/lib/guava-19.0.0.jar http://search.maven.org/remotecontent?filepath=com/google/guava/guava/22.0/guava-22.0.jar
 
-COPY launch.sh /
-
 WORKDIR ${JMETER_HOME}
+
+RUN mkdir testSamples/
