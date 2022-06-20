@@ -65,5 +65,3 @@ RUN curl --location --silent --show-error --output  ${JMETER_HOME}/lib/guava-19.
 COPY launch.sh /
 
 WORKDIR ${JMETER_HOME}
-
-ENTRYPOINT ["/launch.sh"]
