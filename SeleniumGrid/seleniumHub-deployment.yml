@@ -16,6 +16,8 @@ spec:
       protocol: TCP
       port: 5555
       targetPort: 5555
+  type: NodePort
+  sessionAffinity: None
 
 ---
 apiVersion: apps/v1
