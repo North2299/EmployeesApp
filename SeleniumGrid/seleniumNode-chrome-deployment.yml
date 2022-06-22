@@ -1,11 +1,32 @@
-apiVersion: apps/v1
-kind: Deployment
+apiVersion: v1
+kind: Service
 metadata:
   name: selenium-node-chrome
   labels:
-    app: selenium-node-chrome
+    name: selenium-node-chrome
 spec:
-  replicas: 2
+  selector:
+    app: selenium-node-chrome
+    browser: chrome
+  ports:
+    - name: nodeport
+      protocol: TCP
+      port: 5555
+      targetPort: 5555
+    - name: node-port-grid
+      protocol: TCP
+      port: 4444
+      targetPort: 4444
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: selenium-node-chrome-deployment
+  labels:
+    app: selenium-node-chrome
+    name: selenium-node-chrome
+spec:
+  replicas: 1
   selector:
     matchLabels:
       app: selenium-node-chrome
@@ -14,26 +35,28 @@ spec:
       labels:
         app: selenium-node-chrome
     spec:
-      volumes:
-      - name: dshm
-        emptyDir:
-          medium: Memory
       containers:
-      - name: selenium-node-chrome
-        image: selenium/node-chrome:4.0
-        ports:
-          - containerPort: 5555
-        volumeMounts:
-          - mountPath: /dev/shm
-            name: dshm
-        env:
-          - name: SE_EVENT_BUS_HOST
-            value: "selenium-hub"
-          - name: SE_EVENT_BUS_SUBSCRIBE_PORT
-            value: "4443"
-          - name: SE_EVENT_BUS_PUBLISH_PORT
-            value: "4442"
-        resources:
-          limits:
-            memory: "1000Mi"
-            cpu: ".5"
+        - name: selenium-node-chrome
+          image: selenium/node-chrome:3.141.59-xenon
+          env:
+            - name: JAVA_OPTS
+              value: "-Xmx512m -Dselenium.LOGGER.level=WARNING"
+            - name: SE_OPTS
+              value: ""
+            - name: HUB_PORT_4444_TCP_ADDR
+              value: "selenium-hub"
+            - name: HUB_PORT_4444_TCP_PORT
+              value: "4444"
+            - name: REMOTE_HOST
+              value: ""
+          ports:
+            - containerPort: 4444
+              protocol: TCP
+            - containerPort: 5555
+              protocol: TCP
+          volumeMounts:
+            - name: dshm
+              mountPath: /dev/shm
+      volumes:
+        - name: dshm
+          emptyDir: { "medium": "Memory" }
