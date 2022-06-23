@@ -1,9 +1,31 @@
-apiVersion: apps/v1
-kind: Deployment
+apiVersion: v1
+kind: Service
 metadata:
   name: selenium-hub
   labels:
+    name: selenium-hub
+spec:
+  selector:
     app: selenium-hub
+  ports:
+    - name: web
+      protocol: TCP
+      port: 4444
+      targetPort: 4444
+    - name: node
+      protocol: TCP
+      port: 5555
+      targetPort: 5555
+  type: NodePort
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: selenium-hub-deployment
+  labels:
+    app: selenium-hub
+    name: selenium-hub
 spec:
   replicas: 1
   selector:
@@ -15,47 +37,29 @@ spec:
         app: selenium-hub
     spec:
       containers:
-      - name: selenium-hub
-        image: selenium/hub:3.141.59-xenon
-        ports:
-          - containerPort: 4444
-          - containerPort: 4443
-          - containerPort: 4442
-        resources:
-          limits:
-            memory: "1000Mi"
-            cpu: ".5"
-        livenessProbe:
-          httpGet:
-            path: /wd/hub/status
-            port: 4444
-          initialDelaySeconds: 30
-          timeoutSeconds: 5
-        readinessProbe:
-          httpGet:
-            path: /wd/hub/status
-            port: 4444
-          initialDelaySeconds: 30
-          timeoutSeconds: 5
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: selenium-hub
-  labels:
-    app: selenium-hub
-spec:
-  ports:
-  - port: 4444
-    targetPort: 4444
-    name: port0
-  - port: 4443
-    targetPort: 4443
-    name: port1
-  - port: 4442
-    targetPort: 4442
-    name: port2
-  selector:
-    app: selenium-hub
-  type: NodePort
-  sessionAffinity: None
+        - name: selenium-hub
+          image: selenium/hub:3.141.59-xenon
+          env:
+            - name: JAVA_OPTS
+              value: "-Xmx1024m"
+            - name: POOL_MAX
+              value: "500"
+            - name: GRID_NEW_SESSION_WAIT_TIMEOUT
+              value: "-1"
+            - name: GRID_JETTY_MAX_THREADS
+              value: "-1"
+            - name: GRID_NODE_POLLING
+              value: "5000"
+            - name: GRID_CLEAN_UP_CYCLE
+              value: "5000"
+            - name: GRID_TIMEOUT
+              value: "600"
+            - name: GRID_BROWSER_TIMEOUT
+              value: "600"
+            - name: GRID_MAX_SESSION
+              value: "5"
+            - name: GRID_UNREGISTER_IF_STILL_DOWN_AFTER
+              value: "30000"
+          ports:
+            - containerPort: 4444
+              protocol: TCP
