@@ -12,3 +12,4 @@ wget -O "lib/ext/jmeter-plugins-manager.jar" $PLUGIN_MANAGER_URL
 
 # GENERATING SCRIPTS
 java -cp lib/ext/jmeter-plugins-manager.jar org.jmeterplugins.repository.PluginManagerCMDInstaller
+PluginsManagerCMD.sh install jpgc-webdriver=3.3
