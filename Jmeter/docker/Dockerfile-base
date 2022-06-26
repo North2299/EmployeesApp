@@ -36,5 +36,5 @@ COPY install_plugin-manager.sh .
 
 RUN chmod +x install_plugin-manager.sh 
 RUN ./install_plugin-manager.sh
-		
+WORKDIR /jmeter/apache-jmeter-5.4.3		
 RUN PluginsManagerCMD.sh install jpgc-webdriver=3.3
