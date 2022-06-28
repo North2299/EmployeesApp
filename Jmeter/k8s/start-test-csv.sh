@@ -51,4 +51,4 @@ done # for i in "${slave_pods[@]}"
 
 #echo Starting Jmeter load test
 
-kubectl exec -ti -n jmeter -l /jmeter/results/res.jtl $master_pod -- /bin/bash /load_test "$test_name"
+kubectl exec -ti -n jmeter $master_pod -- /bin/bash /load_test "$test_name" -l /jmeter/res.jtl
