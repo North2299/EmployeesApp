@@ -107,7 +107,7 @@ WDS.sampleResult.sampleEnd()
           <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
             <stringProp name="delimiter">;</stringProp>
             <stringProp name="fileEncoding"></stringProp>
-            <stringProp name="filename">C:\Users\lenovo\Documents\TC1_ADD.csv</stringProp>
+            <stringProp name="filename">/TC1_ADD.csv</stringProp>
             <boolProp name="ignoreFirstLine">false</boolProp>
             <boolProp name="quotedData">false</boolProp>
             <boolProp name="recycle">true</boolProp>
@@ -420,7 +420,7 @@ WDS.sampleResult.sampleEnd()
           </HeaderManager>
           <hashTree/>
           <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
-            <stringProp name="filename">C:\Users\lenovo\Documents\TC1_ADD.csv</stringProp>
+            <stringProp name="filename">/TC1_ADD.csv</stringProp>
             <stringProp name="fileEncoding"></stringProp>
             <stringProp name="variableNames">uname, uid, uemail, ujob, uphone, udepartement</stringProp>
             <boolProp name="ignoreFirstLine">false</boolProp>
