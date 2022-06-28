@@ -3,7 +3,7 @@ test_file_path="/home/userpfe/EmployeesApp/Jmeter/senario/testplan2.jmx"
 test_name="$(basename "$test_file_path")"
 testDB_file_path="/home/userpfe/EmployeesApp/Jmeter/testDB/TC1_ADD.csv"
 testDB_name="$(basename "$testDB_file_path")"
-testDB_Split_files_path = "/home/userpfe/test"
+testDB_Split_files_path="/home/userpfe/test"
 
 #Get Master pod details
 
