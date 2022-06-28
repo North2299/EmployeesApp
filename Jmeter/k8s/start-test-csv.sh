@@ -33,7 +33,7 @@ csvfile="${testDB_name}"
 
 printf "Processing %s file..\n" "$csvfile"
 
-split --suffix-length="${slavedigits}" --additional-suffix=.csv -d --number="l/${slavesnum}" "${testDB_file_path}" "$testDB_Split_files_path"/
+split --suffix-length="${slavedigits}" --additional-suffix=.csv -d --number="l/${slavesnum}" "${testDB_file_path}" "${testDB_Split_files_path}/"
 
 j=0
 for i in $(seq -f "%0${slavedigits}g" 0 $((slavesnum-1)))
