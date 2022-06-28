@@ -6,7 +6,7 @@ ARG JMETER_VERSION="5.4.3"
 
 ENV JMETER_VERSION ${JMETER_VERSION}
 ENV JMETER_HOME /jmeter/apache-jmeter-$JMETER_VERSION
-ENV PATH $JMETER_HOME/bin:$PATH
+
 
 # INSTALL PRE-REQ		
 RUN apt-get clean \
@@ -37,3 +37,4 @@ COPY install_plugin-manager.sh .
 RUN chmod +x install_plugin-manager.sh 
 RUN ./install_plugin-manager.sh
 		
+ENV PATH $JMETER_HOME/bin:$PATH
