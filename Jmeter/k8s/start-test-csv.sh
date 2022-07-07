@@ -53,4 +53,4 @@ done # for i in "${slave_pods[@]}"
 
 kubectl exec -ti -n jmeter $master_pod -- /bin/bash /load_test "$test_name -l /jmeter/res.jtl"
 
-kubectl cp  jmeter/jmeter-master-66d8b96fb4-fnl96:/jmeter/res.jtl /home/userpfe/EmployeesApp/Jmeter/senario/res.jtl
+kubectl cp  jmeter/jmeter-master-66d8b96fb4-fnl96:/jmeter/res.jtl /home/userpfe/EmployeesApp/Jmeter/senario/res1.jtl
