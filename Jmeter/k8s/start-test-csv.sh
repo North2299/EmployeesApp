@@ -41,7 +41,7 @@ do
 printf "Copy %s to %s on %s\n" "${i}.csv" "${csvfile}" "${slave_pods[j]}"
 kubectl -n jmeter cp "${testDB_Split_files_path}/${i}.csv" "${slave_pods[j]}":/
 kubectl -n jmeter exec "${slave_pods[j]}" -- mv -v /"${i}.csv" /"${csvfile}"
-#rm -v "${jmx_dir}/${i}.csv"
+rm -v "${jmx_dir}/${i}.csv"
 
 let j=j+1
 done # for i in "${slave_pods[@]}"
@@ -52,3 +52,5 @@ done # for i in "${slave_pods[@]}"
 #echo Starting Jmeter load test
 
 kubectl exec -ti -n jmeter $master_pod -- /bin/bash /load_test "$test_name -l /jmeter/res.jtl"
+
+kubectl cp  jmeter/jmeter-master-66d8b96fb4-fnl96:/jmeter/res.jtl /home/userpfe/EmployeesApp/Jmeter/senario/res.jtl
