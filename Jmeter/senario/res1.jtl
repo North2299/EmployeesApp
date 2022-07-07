@@ -55,3 +55,59 @@ timeStamp	elapsed	label	responseCode	responseMessage	threadName	dataType	success
 1657183664728	83	Acess Add Employee Form	200	OK	10.66.32.55-Thread Group 1-4	text	true		9236	0	1	1	http://10.66.12.46:30170/	0	0	0
 1657183666755	153	Add Employee (Selenium)	200	OK	10.66.32.55-Thread Group 1-4	text	true		9188	0	1	1	http://10.66.12.46:30170/	0	0	0
 1657183666923	7	Save Employee	201		10.66.32.55-Thread Group 1-4	text	true		396	344	1	1	http://10.66.12.46:30163/employee/add	7	0	1
+1657184625759	8563	Website Connexion	200	OK	10.66.32.54-Thread Group 1-1	text	true		9130	0	7	7	http://10.66.12.46:30170/	0	0	0
+1657184626914	8500	Website Connexion	200	OK	10.66.32.55-Thread Group 1-1	text	true		9130	0	7	7	http://10.66.12.46:30170/	0	0	0
+1657184635709	50	Acess Add Employee Form	200	OK	10.66.32.55-Thread Group 1-1	text	true		9236	0	7	7	http://10.66.12.46:30170/	0	0	0
+1657184637346	159	Add Employee (Selenium)	200	OK	10.66.32.55-Thread Group 1-1	text	true		9188	0	7	7	http://10.66.12.46:30170/	0	0	0
+1657184637524	6	Save Employee	201		10.66.32.55-Thread Group 1-1	text	true		396	344	7	7	http://10.66.12.46:30163/employee/add	6	0	1
+1657184640241	8470	Website Connexion	200	OK	10.66.32.55-Thread Group 1-7	text	true		9130	0	6	6	http://10.66.12.46:30170/	0	0	0
+1657184648964	68	Acess Add Employee Form	200	OK	10.66.32.55-Thread Group 1-7	text	true		9236	0	6	6	http://10.66.12.46:30170/	0	0	0
+1657184650839	198	Add Employee (Selenium)	200	OK	10.66.32.55-Thread Group 1-7	text	true		9188	0	6	6	http://10.66.12.46:30170/	0	0	0
+1657184651053	8	Save Employee	201		10.66.32.55-Thread Group 1-7	text	true		396	344	6	6	http://10.66.12.46:30163/employee/add	8	0	3
+1657184656520	8507	Website Connexion	200	OK	10.66.32.55-Thread Group 1-2	text	true		9130	0	5	5	http://10.66.12.46:30170/	0	0	0
+1657184665320	92	Acess Add Employee Form	200	OK	10.66.32.55-Thread Group 1-2	text	true		9236	0	5	5	http://10.66.12.46:30170/	0	0	0
+1657184667017	110	Add Employee (Selenium)	200	OK	10.66.32.55-Thread Group 1-2	text	true		9188	0	5	5	http://10.66.12.46:30170/	0	0	0
+1657184667141	7	Save Employee	201		10.66.32.55-Thread Group 1-2	text	true		396	344	5	5	http://10.66.12.46:30163/employee/add	7	0	2
+1657184670224	8517	Website Connexion	200	OK	10.66.32.55-Thread Group 1-6	text	true		9130	0	4	4	http://10.66.12.46:30170/	0	0	0
+1657184679040	80	Acess Add Employee Form	200	OK	10.66.32.55-Thread Group 1-6	text	true		9236	0	4	4	http://10.66.12.46:30170/	0	0	0
+1657184680822	106	Add Employee (Selenium)	200	OK	10.66.32.55-Thread Group 1-6	text	true		9188	0	4	4	http://10.66.12.46:30170/	0	0	0
+1657184680942	8	Save Employee	201		10.66.32.55-Thread Group 1-6	text	true		396	344	4	4	http://10.66.12.46:30163/employee/add	8	0	1
+1657184686716	8593	Website Connexion	200	OK	10.66.32.55-Thread Group 1-3	text	true		9130	0	3	3	http://10.66.12.46:30170/	0	0	0
+1657184695727	88	Acess Add Employee Form	200	OK	10.66.32.55-Thread Group 1-3	text	true		9236	0	3	3	http://10.66.12.46:30170/	0	0	0
+1657184634668	65	Acess Add Employee Form	200	OK	10.66.32.54-Thread Group 1-1	text	true		9236	0	7	7	http://10.66.12.46:30170/	0	0	0
+1657184636337	105	Add Employee (Selenium)	200	OK	10.66.32.54-Thread Group 1-1	text	true		9188	0	7	7	http://10.66.12.46:30170/	0	0	0
+1657184636506	21	Save Employee	201		10.66.32.54-Thread Group 1-1	text	true		391	339	7	7	http://10.66.12.46:30163/employee/add	21	0	2
+1657184641720	8606	Website Connexion	200	OK	10.66.32.54-Thread Group 1-7	text	true		9130	0	6	6	http://10.66.12.46:30170/	0	0	0
+1657184650659	74	Acess Add Employee Form	200	OK	10.66.32.54-Thread Group 1-7	text	true		9236	0	6	6	http://10.66.12.46:30170/	0	0	0
+1657184652446	104	Add Employee (Selenium)	200	OK	10.66.32.54-Thread Group 1-7	text	true		9188	0	6	6	http://10.66.12.46:30170/	0	0	0
+1657184652621	8	Save Employee	201		10.66.32.54-Thread Group 1-7	text	true		391	339	6	6	http://10.66.12.46:30163/employee/add	8	0	2
+1657184655051	8562	Website Connexion	200	OK	10.66.32.54-Thread Group 1-2	text	true		9130	0	5	5	http://10.66.12.46:30170/	0	0	0
+1657184663919	92	Acess Add Employee Form	200	OK	10.66.32.54-Thread Group 1-2	text	true		9236	0	5	5	http://10.66.12.46:30170/	0	0	0
+1657184665607	114	Add Employee (Selenium)	200	OK	10.66.32.54-Thread Group 1-2	text	true		9188	0	5	5	http://10.66.12.46:30170/	0	0	0
+1657184665737	11	Save Employee	201		10.66.32.54-Thread Group 1-2	text	true		391	339	5	5	http://10.66.12.46:30163/employee/add	11	0	3
+1657184671616	8508	Website Connexion	200	OK	10.66.32.54-Thread Group 1-6	text	true		9130	0	4	4	http://10.66.12.46:30170/	0	0	0
+1657184680601	43	Acess Add Employee Form	200	OK	10.66.32.54-Thread Group 1-6	text	true		9236	0	4	4	http://10.66.12.46:30170/	0	0	0
+1657184682242	104	Add Employee (Selenium)	200	OK	10.66.32.54-Thread Group 1-6	text	true		9188	0	4	4	http://10.66.12.46:30170/	0	0	0
+1657184682413	6	Save Employee	201		10.66.32.54-Thread Group 1-6	text	true		391	339	4	4	http://10.66.12.46:30163/employee/add	6	0	2
+1657184685348	8574	Website Connexion	200	OK	10.66.32.54-Thread Group 1-3	text	true		9130	0	3	3	http://10.66.12.46:30170/	0	0	0
+1657184694214	90	Acess Add Employee Form	200	OK	10.66.32.54-Thread Group 1-3	text	true		9236	0	3	3	http://10.66.12.46:30170/	0	0	0
+1657184695912	105	Add Employee (Selenium)	200	OK	10.66.32.54-Thread Group 1-3	text	true		9188	0	3	3	http://10.66.12.46:30170/	0	0	0
+1657184696095	17	Save Employee	201		10.66.32.54-Thread Group 1-3	text	true		396	344	3	3	http://10.66.12.46:30163/employee/add	17	0	1
+1657184701623	8592	Website Connexion	200	OK	10.66.32.54-Thread Group 1-5	text	true		9130	0	2	2	http://10.66.12.46:30170/	0	0	0
+1657184710440	83	Acess Add Employee Form	200	OK	10.66.32.54-Thread Group 1-5	text	true		9236	0	2	2	http://10.66.12.46:30170/	0	0	0
+1657184712149	156	Add Employee (Selenium)	200	OK	10.66.32.54-Thread Group 1-5	text	true		9188	0	2	2	http://10.66.12.46:30170/	0	0	0
+1657184712320	7	Save Employee	201		10.66.32.54-Thread Group 1-5	text	true		396	344	2	2	http://10.66.12.46:30163/employee/add	7	0	1
+1657184715148	8564	Website Connexion	200	OK	10.66.32.54-Thread Group 1-4	text	true		9130	0	1	1	http://10.66.12.46:30170/	0	0	0
+1657184723964	78	Acess Add Employee Form	200	OK	10.66.32.54-Thread Group 1-4	text	true		9236	0	1	1	http://10.66.12.46:30170/	0	0	0
+1657184725701	128	Add Employee (Selenium)	200	OK	10.66.32.54-Thread Group 1-4	text	true		9188	0	1	1	http://10.66.12.46:30170/	0	0	0
+1657184725848	7	Save Employee	201		10.66.32.54-Thread Group 1-4	text	true		396	344	1	1	http://10.66.12.46:30163/employee/add	7	0	1
+1657184697541	115	Add Employee (Selenium)	200	OK	10.66.32.55-Thread Group 1-3	text	true		9188	0	3	3	http://10.66.12.46:30170/	0	0	0
+1657184697712	13	Save Employee	201		10.66.32.55-Thread Group 1-3	text	true		396	344	3	3	http://10.66.12.46:30163/employee/add	13	0	0
+1657184700139	8481	Website Connexion	200	OK	10.66.32.55-Thread Group 1-5	text	true		9130	0	2	2	http://10.66.12.46:30170/	0	0	0
+1657184708928	85	Acess Add Employee Form	200	OK	10.66.32.55-Thread Group 1-5	text	true		9236	0	2	2	http://10.66.12.46:30170/	0	0	0
+1657184710613	113	Add Employee (Selenium)	200	OK	10.66.32.55-Thread Group 1-5	text	true		9188	0	2	2	http://10.66.12.46:30170/	0	0	0
+1657184710742	7	Save Employee	201		10.66.32.55-Thread Group 1-5	text	true		396	344	2	2	http://10.66.12.46:30163/employee/add	7	0	1
+1657184716534	8576	Website Connexion	200	OK	10.66.32.55-Thread Group 1-4	text	true		9130	0	1	1	http://10.66.12.46:30170/	0	0	0
+1657184725425	82	Acess Add Employee Form	200	OK	10.66.32.55-Thread Group 1-4	text	true		9236	0	1	1	http://10.66.12.46:30170/	0	0	0
+1657184727133	103	Add Employee (Selenium)	200	OK	10.66.32.55-Thread Group 1-4	text	true		9188	0	1	1	http://10.66.12.46:30170/	0	0	0
+1657184727305	6	Save Employee	201		10.66.32.55-Thread Group 1-4	text	true		396	344	1	1	http://10.66.12.46:30163/employee/add	6	0	1
